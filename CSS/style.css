@@ -46,6 +46,12 @@ a{
     margin-left: auto;
 }
 
+/*Fix the position of Navition bar on top*/
+.posFixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 /*Designing the cover block.*/
 /*Using FlexBox to Align items in center horizontally and vertically both*/
 .cover{
