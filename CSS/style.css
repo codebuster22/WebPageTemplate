@@ -1,0 +1,89 @@
+/*Created by Mihirsinh Parmar on 07/12/19*/
+/*GitHub - @mihir-codes*/
+/*StyleSheet for Responsive WebPage Template*/
+
+/*Removing extra white space from the webpage because many browsers have inbuilt marging and padding*/
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Setting up navigation bar*/
+.header{
+    background-color: red;
+    font-weight: bold;
+}
+
+/*To reduce the overlapping of contents when the screen size is small*/
+@media only screen and (max-width: 500px) {
+    .header{
+        font-size: 0.5em;
+        padding: 0;
+    }
+    
+}
+
+/*Editing list to make it look like single options*/
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+/*Making Space in between options*/
+li{
+    padding: 10px 20px;
+}
+
+/*Editing 'a' tag to not look like a hyperlink*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*A single option on the very right for a menu bar or a search bar*/
+.last{
+    margin-left: auto;
+}
+
+/*Designing the cover block.*/
+/*Using FlexBox to Align items in center horizontally and vertically both*/
+.cover{
+    background-color: aqua;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/*Using Grid to make it look like gallery of options or articles*/
+.projectGrid{
+    background-color: chartreuse;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-gap: 20px;
+}
+
+/*Constricting the images to the size of gridbox*/
+.box > img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Padding and margin to make the image look nicer and within the box*/
+.box{
+    background-color: #444;
+    padding: 80px;
+    margin: 50px;
+}
+
+/*Align the text in center*/
+footer{
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*End of Code*/
